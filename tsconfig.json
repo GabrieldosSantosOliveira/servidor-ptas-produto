@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "lib": ["esnext"],
+    "target": "ES6",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "typeRoots": ["./@types"],
+    "allowJs": true,
+    "module": "commonjs"
+  },
+  "include": [
+    "config",
+    "src",
+    "migrations",
+    "models",
+    "seeders",
+    "."
+  ]
+}
