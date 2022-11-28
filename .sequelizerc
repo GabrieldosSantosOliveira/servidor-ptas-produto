@@ -1,0 +1,26 @@
+const { resolve } = require('path');
+const { env } = require('./config/configEnv');
+module.exports = {
+  env: process.env.NODE_ENV,
+  config: resolve(
+    __dirname,
+    env.DB_FOLDER,
+    'config',
+    'config.js'
+  ),
+  'models-path': resolve(
+    __dirname,
+    env.DB_FOLDER,
+    'models'
+  ),
+  'migrations-path': resolve(
+    __dirname,
+    env.DB_FOLDER,
+    'migrations'
+  ),
+  'seeders-path': resolve(
+    __dirname,
+    env.DB_FOLDER,
+    'seeders'
+  )
+};
