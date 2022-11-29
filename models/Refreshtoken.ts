@@ -5,6 +5,7 @@ import {
   Sequelize,
   DataTypes
 } from 'sequelize';
+
 import { User } from './User';
 export type TypeModel = Pick<Sequelize, 'models'>;
 interface RefreshTokenAttributes {
