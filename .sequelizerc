@@ -1,7 +1,6 @@
 const { resolve } = require('path');
 const { env } = require('./config/configEnv');
 module.exports = {
-  env: process.env.NODE_ENV,
   config: resolve(
     __dirname,
     env.DB_FOLDER,
