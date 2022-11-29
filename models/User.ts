@@ -5,6 +5,7 @@ import {
   Sequelize,
   DataTypes
 } from 'sequelize';
+
 import { RefreshToken, TypeModel } from './Refreshtoken';
 export interface UserAttributes {
   email: string;
