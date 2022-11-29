@@ -1,26 +1,5 @@
 const { config } = require('dotenv');
 const { resolve } = require('path');
-switch (__dirname.includes('dist')) {
-  case true:
-    config({
-      path: resolve(
-        __dirname,
-        '..',
-        '..',
-        `.env.${process.env.NODE_ENV ?? 'development'}`
-      )
-    });
-    break;
-  case false:
-    config({
-      path: resolve(
-        __dirname,
-        '..',
-        `.env.${process.env.NODE_ENV ?? 'development'}`
-      )
-    });
-    break;
-}
 
 const env = {
   PORT: process.env.PORT,
