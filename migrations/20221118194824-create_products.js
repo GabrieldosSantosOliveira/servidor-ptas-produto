@@ -31,12 +31,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,
-        defaultValue: DataTypes.fn('NOW')
+        defaultValue: DataTypes.NOW
       },
       updatedAt: {
         allowNull: false,
         type: DataTypes.DATE,
-        defaultValue: DataTypes.fn('NOW')
+        defaultValue: DataTypes.NOW
       }
     });
   },
