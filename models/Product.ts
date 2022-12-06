@@ -32,9 +32,10 @@ class Product extends Model<
         createdAt: DataTypes.DATE,
         updatedAt: DataTypes.DATE,
         id: {
-          type: DataTypes.INTEGER,
+          allowNull: false,
+          type: DataTypes.UUID,
           primaryKey: true,
-          autoIncrement: true
+          defaultValue: DataTypes.UUIDV4
         }
       },
       {
