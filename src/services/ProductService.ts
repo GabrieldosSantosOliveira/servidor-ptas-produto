@@ -13,8 +13,7 @@ type IDeleteProduct = IFindOneProduct;
 export class ProductService {
   static async findAllProduct() {
     const products = await Product.findAll();
-    if (products.length === 0)
-      return new Error('No product found');
+
     return products;
   }
   static async finOneProduct({ id }: IFindOneProduct) {
